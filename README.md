@@ -5,7 +5,7 @@
 #### The flow I Followed:
 1. Import Required Packages
 2. Loading the Data
-3. Preparing Trining and Validation Data
+3. Preparing Trining and Validation Data (10% for test data)
 4. Model
 5. hyperparameter tuning using sweeps
 6. 10 x 3 image grid
@@ -70,3 +70,33 @@ main_model(filter_org: Filter origanisation (it may be same, double, half or som
 
 Note: I have not saved any model to drive. I observed best parameters and done testing with best parameters.
 #### For part A Question 4 and 5 I used loops without any functions.
+
+### Part B:
+#### The flow I Followed:
+1. Import Required Packages
+2. Loading the Data
+3. Preparing Trining and Validation Data (10% for test data)
+4. pre trained Model
+5. hyperparameter tuning using sweeps
+#### Part B Q1 Function structure:
+```
+pretrain_model(pre_train_model: pretrained Models (it may be inceptionv3,inceptionresnetv2, etc)
+,aug: Data augmentatuion needed or not (True or False)
+,bs: Batch Size
+,fc_size: Dense layer size
+,drop_rate: Dropout
+,batch_norm: To include batch normalisation or not (True or False)
+)
+```
+#### Part B Q3 Function structure:
+```
+pretrain_model_wandb(pre_train_model: pretrained Models (it may be inceptionv3,inceptionresnetv2, etc)
+  ,aug: Data augmentatuion needed or not (True or False)
+  ,bs: Batch Size
+  ,fc_size: Dense layer size
+  ,drop_rate: Dropout
+  ,batch_norm: To include batch normalisation or not (True or False)
+  ,freez_before: how many layer parameters you want to train
+  ,epoch: Number of epochs
+  )
+```
