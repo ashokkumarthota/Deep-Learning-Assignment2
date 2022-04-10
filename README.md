@@ -18,13 +18,13 @@
   ,number_of_neurons_in_the_dense_layer: Number of elements in the dense layer
   )```
   
-  #### Part A Q2 Function structure:
+#### Part A Q2 Function structure:
   ```main_model(filter_org: Filter origanisation (it may be same, double, half or some special filter organisations like p1,p2...)
   ,dropout: Dropout
   ,dense_size: Number of neurons on the dense layer
   ,batch_norm: To include or not include batch normalisation(it is True or Flase)
   )```
-  #### sweep configuration with all necessary parameters
+#### sweep configuration with all necessary parameters
   ```sweep_config = {
     'name': 'sweep1.1',
     'method': 'grid', #random, bayes, grid
